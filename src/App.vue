@@ -1,11 +1,9 @@
-<script>
-const STORAGE_KEY = 'my-todomvc'
+<script lang="ts">
+const STORAGE_KEY = "my-todomvc";
 
 const filters = {
-    all: (todos) => todos
-    , active: (todos) => todos.filter((todo) => !todo.completed)
-    , completed: (todos) => todos.filter((todo) => todo.completed)
-}
+  all: (todos: any) => todos, active: (todos: any) => todos.filter((todo) => !todo.completed), completed: (todos: any) => todos.filter((todo) => todo.completed)
+};
 
 export default {
     data: () => ({
